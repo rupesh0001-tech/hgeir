@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import TypewriterText from "@/components/ui/smoothui/typewriter-text";
 
 export default function Home() {
   return (
@@ -47,7 +50,24 @@ export default function Home() {
             </div>
 
             <h1 className="text-4xl font-bold tracking-tight text-ink sm:text-6xl lg:text-7xl leading-[1.1]">
-              <span className="whitespace-nowrap">10 Cities, <span className="text-green italic">One Vision:</span></span><br />
+              <span className="whitespace-nowrap">
+                10 Cities,{" "}
+                <span className="relative inline-block">
+                  <span className="text-green italic">One Vision:</span>
+                  <svg className="absolute -bottom-2 left-0 w-full h-3" viewBox="0 0 100 10" preserveAspectRatio="none">
+                    <path
+                      d="M 0 5 Q 50 10, 100 5"
+                      stroke="#1a8a5e"
+                      strokeWidth="3"
+                      fill="transparent"
+                      strokeLinecap="round"
+                      className="animate-draw-underline"
+                      pathLength="100"
+                    />
+                  </svg>
+                </span>
+              </span>
+              <br />
               <span className="whitespace-nowrap">A Greener <span className="text-blue">Haryana.</span></span>
             </h1>
 
@@ -55,8 +75,10 @@ export default function Home() {
               A 3-month, 10-city journey across Haryana — bringing solar, wind, EV, biofuels, and clean-tech directly to the people, institutions, and businesses ready to adopt them.
             </p>
             
-            <p className="mt-4 text-lg font-medium text-ink-soft">
-              From Sirsa to Chandigarh, HGER puts every leader in renewable energy face-to-face with 50,000+ buyers — schools, hospitals, government bodies, and commercial enterprises across rural and semi-urban Haryana.
+            <p className="mt-4 text-lg font-medium text-ink-soft min-h-[4rem]">
+              <TypewriterText speed={30}>
+                From Sirsa to Chandigarh, HGER puts every leader in renewable energy face-to-face with 50,000+ buyers — schools, hospitals, government bodies, and commercial enterprises across rural and semi-urban Haryana.
+              </TypewriterText>
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
