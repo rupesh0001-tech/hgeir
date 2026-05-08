@@ -37,7 +37,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <header className="relative z-10 mx-auto max-w-7xl px-6 mt-10 pt-12 pb-24 sm:pt-20 lg:px-8">
-        <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-[1.5fr_1fr] lg:items-center lg:gap-x-12">
+        <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-[1.1fr_1fr] lg:items-center lg:gap-x-12">
 
           {/* Content Left */}
           <div className="max-w-[95%] lg:max-w-none">
@@ -54,11 +54,11 @@ export default function Home() {
                 10 Cities,{" "}
                 <span className="relative inline-block">
                   <span className="text-green italic">One Vision:</span>
-                  <svg className="absolute -bottom-2 left-0 w-full h-3" viewBox="0 0 100 10" preserveAspectRatio="none">
+                  <svg className="absolute -bottom-2.5 left-0 w-full h-4" viewBox="0 0 100 12" preserveAspectRatio="none">
                     <path
-                      d="M 0 5 Q 50 10, 100 5"
+                      d="M 0 6 L 100 6"
                       stroke="#1a8a5e"
-                      strokeWidth="3"
+                      strokeWidth="10"
                       fill="transparent"
                       strokeLinecap="round"
                       className="animate-draw-underline"
@@ -101,7 +101,7 @@ export default function Home() {
           </div>
 
           {/* Visual Right */}
-          <div className="relative lg:ml-auto">
+          <div className="relative lg:ml-auto lg:scale-140">
             <div className="relative animate-float">
               {/* SVG Illustration */}
               <svg className="w-full h-auto drop-shadow-2xl" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
@@ -192,21 +192,21 @@ export default function Home() {
               </svg>
 
               {/* Floating Stat Badges */}
-              <div className="absolute -left-4 top-1/4 bg-paper p-4 rounded-2xl shadow-xl ring-1 ring-line animate-float" style={{ animationDelay: '1s' }}>
-                <div className="text-2xl font-bold text-ink">10</div>
-                <div className="text-xs font-semibold text-ink-soft uppercase tracking-wider">Cities</div>
+              <div className="absolute -left-10 top-1/4 bg-paper p-2.5 rounded-xl shadow-lg ring-1 ring-line animate-float" style={{ animationDelay: '1s' }}>
+                <div className="text-lg font-bold text-ink">10</div>
+                <div className="text-[10px] font-semibold text-ink-soft uppercase tracking-wider">Cities</div>
               </div>
-              <div className="absolute right-0 top-0 bg-paper p-4 rounded-2xl shadow-xl ring-1 ring-line animate-float" style={{ animationDelay: '2s' }}>
-                <div className="text-2xl font-bold text-ink">3</div>
-                <div className="text-xs font-semibold text-ink-soft uppercase tracking-wider">Months</div>
+              <div className="absolute -right-4 -top-8 bg-paper p-2.5 rounded-xl shadow-lg ring-1 ring-line animate-float" style={{ animationDelay: '2s' }}>
+                <div className="text-lg font-bold text-ink">3</div>
+                <div className="text-[10px] font-semibold text-ink-soft uppercase tracking-wider">Months</div>
               </div>
-              <div className="absolute -right-8 bottom-1/4 bg-paper p-4 rounded-2xl shadow-xl ring-1 ring-line animate-float" style={{ animationDelay: '3.5s' }}>
-                <div className="text-2xl font-bold text-ink">₹100<span className="text-sm">Cr</span></div>
-                <div className="text-xs font-semibold text-ink-soft uppercase tracking-wider">Pipeline</div>
+              <div className="absolute -right-16 bottom-1/4 bg-paper p-2.5 rounded-xl shadow-lg ring-1 ring-line animate-float" style={{ animationDelay: '3.5s' }}>
+                <div className="text-lg font-bold text-ink">₹100<span className="text-xs">Cr</span></div>
+                <div className="text-[10px] font-semibold text-ink-soft uppercase tracking-wider">Pipeline</div>
               </div>
-              <div className="absolute left-1/4 -bottom-4 bg-paper p-4 rounded-2xl shadow-xl ring-1 ring-line animate-float" style={{ animationDelay: '0.5s' }}>
-                <div className="text-2xl font-bold text-ink">50K<span className="text-green-bright">+</span></div>
-                <div className="text-xs font-semibold text-ink-soft uppercase tracking-wider">Visitors</div>
+              <div className="absolute left-1/4 -bottom-8 bg-paper p-2.5 rounded-xl shadow-lg ring-1 ring-line animate-float" style={{ animationDelay: '0.5s' }}>
+                <div className="text-lg font-bold text-ink">50K<span className="text-green-bright">+</span></div>
+                <div className="text-[10px] font-semibold text-ink-soft uppercase tracking-wider">Visitors</div>
               </div>
             </div>
           </div>
