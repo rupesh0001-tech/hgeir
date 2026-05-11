@@ -6,6 +6,7 @@ import RouteSection from "@/components/sections/route-section";
 import SchemesSection from "@/components/sections/schemes-section";
 import AudienceSection from "@/components/sections/audience-section";
 import ExclusivitySection from "@/components/sections/exclusivity-section";
+import SummitSection from "@/components/sections/summit-section";
 import SponsorshipSection from "@/components/sections/sponsorship-section";
 import FinalCTA from "@/components/sections/final-cta";
 import Footer from "@/components/sections/footer";
@@ -27,6 +28,7 @@ export default function Home() {
           <li><a href="#cities" className="nav-link text-xs font-bold uppercase tracking-widest text-ink hover:text-green transition-colors">The Route</a></li>
           <li><a href="#schemes" className="nav-link text-xs font-bold uppercase tracking-widest text-ink hover:text-green transition-colors">Govt. Schemes</a></li>
           <li><a href="#exclusive" className="nav-link text-xs font-bold uppercase tracking-widest text-ink hover:text-green transition-colors">20 Slots</a></li>
+          <li><a href="#summit" className="nav-link text-xs font-bold uppercase tracking-widest text-ink hover:text-green transition-colors">Summit</a></li>
           <li><a href="#sponsors" className="nav-link text-xs font-bold uppercase tracking-widest text-ink hover:text-green transition-colors">Sponsorship</a></li>
           <li><a href="#audience" className="nav-link text-xs font-bold uppercase tracking-widest text-ink hover:text-green transition-colors">Audience</a></li>
           <li><a href="#contact" className="nav-link text-xs font-bold uppercase tracking-widest text-ink hover:text-green transition-colors">Contact</a></li>
@@ -55,6 +57,7 @@ export default function Home() {
         <SchemesSection />
         <AudienceSection />
         <ExclusivitySection />
+        <SummitSection />
         <SponsorshipSection />
         <FinalCTA />
         <Footer />
