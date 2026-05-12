@@ -55,7 +55,7 @@ export default function Home() {
       {/* Sections */}
       <div className="pt-16">
         <Hero />
-        <RouteSection />
+        {/* <RouteSection /> */}
         <CityDetailsSection />
         <CityAlternate />
         <SchemesSection />
