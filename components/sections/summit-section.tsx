@@ -89,7 +89,7 @@ const SummitSection = () => {
   ];
 
   return (
-    <section id="summit" className="relative z-10 mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 bg-bg overflow-hidden">
+    <section id="summit" className="relative z-10 mx-auto max-w-7xl px-6 py-12 sm:py-16 lg:px-8 bg-bg overflow-hidden">
       {/* Background Decor */}
       <div className="absolute top-0 right-0 -z-10 h-full w-full overflow-hidden opacity-5 pointer-events-none">
         <div className="absolute -top-24 -right-24 h-[500px] w-[500px] rounded-full bg-sun blur-[120px]" />
@@ -102,12 +102,8 @@ const SummitSection = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-8 inline-flex items-center gap-2 rounded-full bg-ink/5 px-5 py-2 text-[10px] font-black uppercase tracking-[0.25em] text-ink ring-1 ring-ink/10 shadow-sm"
+          className="mb-8 inline-flex items-center rounded-full bg-paper px-4 py-1.5 font-mono text-sm font-semibold tracking-wide text-ink shadow-sm ring-1 ring-inset ring-line"
         >
-          <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sun opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-sun"></span>
-          </span>
           Exclusive Leadership & Recognition Evening
         </motion.div>
         
@@ -116,9 +112,9 @@ const SummitSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
-          className="text-4xl font-bold tracking-tight text-ink sm:text-6xl lg:text-6xl leading-[1.2] font-fraunces"
+          className="font-fraunces text-4xl font-normal text-ink sm:text-6xl lg:text-7xl leading-[1.0] mb-8" style={{ letterSpacing: '-0.04em' }}
         >
-          The HGER <span className="text-green italic font-medium">Summit</span> <br className="hidden sm:block" />
+          The HGER <span className="text-green italic">Summit</span> <br className="hidden sm:block" />
           <span className="text-sun">&</span> Awards Night
         </motion.h2>
         
@@ -127,7 +123,7 @@ const SummitSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
-          className="mt-10 text-lg sm:text-xl font-medium text-ink-soft/80 leading-relaxed max-w-3xl mx-auto"
+          className="mt-10 max-w-3xl mx-auto font-manrope text-lg sm:text-xl font-medium text-ink-soft/80 leading-relaxed"
         >
           An exclusive summit and awards evening bringing together renewable energy leaders, innovators, policymakers, investors, exhibitors, and clean-tech pioneers under one platform.
         </motion.p>
@@ -146,12 +142,12 @@ const SummitSection = () => {
               <span className="h-10 w-1.5 bg-green rounded-full" />
               Event Overview
             </h3>
-            <p className="text-ink-soft text-xl leading-relaxed font-medium">
+            <p className="font-manrope text-ink-soft text-xl leading-relaxed font-medium">
               The event celebrates impactful contributions toward a greener Haryana while creating opportunities for collaboration, networking, recognition, and business growth.
             </p>
             <div className="grid sm:grid-cols-2 gap-y-4 gap-x-8 pt-4">
               {experience.map((item, i) => (
-                <div key={i} className="flex items-center gap-3 text-sm font-bold text-ink-soft/60">
+                <div key={i} className="flex items-center gap-3 font-manrope text-sm font-bold text-ink-soft/60">
                   <div className="h-5 w-5 rounded-full bg-green/10 flex items-center justify-center text-green shrink-0">
                     <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
@@ -185,7 +181,7 @@ const SummitSection = () => {
               <h3 className="text-4xl sm:text-5xl font-fraunces font-medium leading-[1.1]">
                 Distinguished <br /> <span className="text-sun italic">Government</span> & <br /> Industry Leaders
               </h3>
-              <p className="mt-8 text-paper/50 text-lg leading-relaxed font-medium">
+              <p className="mt-8 font-manrope text-paper/50 text-lg leading-relaxed font-medium">
                 Special participation from senior cabinet officials, renewable energy pioneers, and clean-tech visionaries from across the nation.
               </p>
             </div>
@@ -198,8 +194,8 @@ const SummitSection = () => {
                   </svg>
                 </div>
                 <div>
-                  <div className="text-sm font-black uppercase tracking-widest text-paper">Summit Edition I</div>
-                  <div className="text-xs font-bold text-paper/40">VIP DELEGATE PASS REQUIRED</div>
+                  <div className="font-mono text-sm font-black uppercase tracking-widest text-paper">Summit Edition I</div>
+                  <div className="font-mono text-xs font-bold text-paper/40">VIP DELEGATE PASS REQUIRED</div>
                 </div>
               </div>
               <div className="hidden sm:block h-10 w-10 opacity-20">
@@ -253,7 +249,7 @@ const SummitSection = () => {
         <div className="text-center mb-20">
           <span className="font-mono text-[10px] font-black uppercase tracking-[0.4em] text-green mb-4 block">Recognition Excellence</span>
           <h3 className="text-5xl sm:text-6xl font-fraunces text-ink leading-tight">Award Categories</h3>
-          <p className="mt-6 text-ink-soft/60 font-bold uppercase tracking-widest text-xs">Celebrating Impact across two distinct tracks</p>
+          <p className="mt-6 font-mono text-ink-soft/60 font-bold uppercase tracking-widest text-xs">Celebrating Impact across two distinct tracks</p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
@@ -266,7 +262,7 @@ const SummitSection = () => {
           >
             <div className="flex items-center justify-between px-6 border-b border-line pb-6">
               <h4 className="text-2xl font-bold text-ink">Exhibitor Track</h4>
-              <span className="text-[10px] font-black bg-sun/10 text-sun px-4 py-1.5 rounded-full ring-1 ring-sun/20 uppercase tracking-[0.2em]">Track 01</span>
+              <span className="font-mono text-[10px] font-black bg-sun/10 text-sun px-4 py-1.5 rounded-full ring-1 ring-sun/20 uppercase tracking-[0.2em]">Track 01</span>
             </div>
             <div className="grid gap-4">
               {exhibitorAwards.map((award, i) => (
@@ -278,7 +274,7 @@ const SummitSection = () => {
                   <div className="text-3xl font-fraunces font-medium italic text-sun/30 group-hover:text-sun transition-colors shrink-0 w-10">
                     {String(i + 1).padStart(2, '0')}
                   </div>
-                  <span className="text-[17px] font-bold text-ink-soft group-hover:text-paper transition-colors">
+                  <span className="font-manrope text-[17px] font-bold text-ink-soft group-hover:text-paper transition-colors">
                     {award}
                   </span>
                 </motion.div>
@@ -295,7 +291,7 @@ const SummitSection = () => {
           >
             <div className="flex items-center justify-between px-6 border-b border-line pb-6">
               <h4 className="text-2xl font-bold text-ink">Community Track</h4>
-              <span className="text-[10px] font-black bg-green/10 text-green px-4 py-1.5 rounded-full ring-1 ring-green/20 uppercase tracking-[0.2em]">Track 02</span>
+              <span className="font-mono text-[10px] font-black bg-green/10 text-green px-4 py-1.5 rounded-full ring-1 ring-green/20 uppercase tracking-[0.2em]">Track 02</span>
             </div>
             <div className="grid gap-4">
               {communityAwards.map((award, i) => (
@@ -304,7 +300,7 @@ const SummitSection = () => {
                   whileHover={{ x: -12 }}
                   className="flex items-center gap-6 p-6 rounded-[2rem] bg-paper ring-1 ring-line shadow-sm hover:ring-green/30 hover:bg-ink group transition-all duration-300"
                 >
-                  <span className="text-[17px] font-bold text-ink-soft group-hover:text-paper transition-colors flex-1 text-right">
+                  <span className="font-manrope text-[17px] font-bold text-ink-soft group-hover:text-paper transition-colors flex-1 text-right">
                     {award}
                   </span>
                   <div className="text-3xl font-fraunces font-medium italic text-green/30 group-hover:text-green transition-colors shrink-0 w-10 text-right">

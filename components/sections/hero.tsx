@@ -5,11 +5,11 @@ import TypewriterText from "@/components/ui/smoothui/typewriter-text";
 
 const Hero = () => {
   return (
-    <header className="relative z-10 mx-auto max-w-7xl px-6 mt-10 pt-12 pb-24 sm:pt-20 lg:px-8">
+    <header className="relative z-10 mx-auto max-w-7xl px-6 mt-4 pt-6 pb-20 sm:pt-10 lg:px-8">
       <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-[1fr_1fr] lg:items-center lg:gap-x-12">
         {/* Content Left */}
         <div className="max-w-[95%] lg:max-w-none">
-          <div className="mb-8 inline-flex items-center rounded-full bg-paper px-4 py-1.5 text-sm font-semibold tracking-wide text-green shadow-sm ring-1 ring-inset ring-line">
+          <div className="mb-8 inline-flex items-center rounded-full bg-paper px-4 py-1.5 font-mono text-sm font-semibold tracking-wide text-green shadow-sm ring-1 ring-inset ring-line">
             <div className="relative flex size-3.5 items-center justify-center mr-2">
               <span className="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75 animate-ping duration-300"></span>
               <span className="relative inline-flex size-2 rounded-full bg-green-600"></span>
@@ -17,7 +17,7 @@ const Hero = () => {
             Haryana Green Energy Roadshow · Edition I · 2026
           </div>
 
-          <h1 className="text-4xl font-bold tracking-tight text-ink sm:text-6xl lg:text-6xl leading-[1.2]">
+          <h1 className="font-fraunces text-4xl font-normal text-ink sm:text-6xl lg:text-6xl" style={{ letterSpacing: '-0.04em', lineHeight: '1.2' }}>
             <span className="block sm:inline sm:whitespace-nowrap">
               10 Cities,{" "}
               <span className="relative inline-block">
@@ -37,15 +37,15 @@ const Hero = () => {
             </span>
             <br className="hidden sm:block" />
             <span className="block sm:inline sm:whitespace-nowrap mt-2 sm:mt-0">
-              A Greener <span className="text-blue">Haryana.</span>
+              A Greener <span className="text-blue italic">Haryana.</span>
             </span>
           </h1>
 
-          <p className="mt-6 text-sm font-medium text-ink-soft sm:text-lg">
+          <p className="mt-6 font-manrope text-sm font-medium text-ink-soft sm:text-lg">
             A 3-month, 10-city journey across Haryana — bringing solar, wind, EV, biofuels, and clean-tech directly to the people, institutions, and businesses ready to adopt them.
           </p>
 
-          <p className="mt-4 text-sm font-medium text-ink-soft sm:text-lg min-h-[4rem]">
+          <p className="mt-4 min-h-16 font-manrope text-sm font-medium text-ink-soft sm:text-lg">
             <TypewriterText speed={30}>
               From Palwal to Chandigarh, HGER puts every leader in renewable energy face-to-face with 50,000+ buyers — schools, hospitals, government bodies, and commercial enterprises across rural and semi-urban Haryana.
             </TypewriterText>
@@ -54,7 +54,7 @@ const Hero = () => {
           <div className="mt-10 flex flex-wrap gap-4">
             <a
               href="#exclusive"
-              className="group relative inline-flex items-center gap-2 overflow-hidden rounded-xl bg-green px-8 py-4 text-lg font-bold text-paper transition-all hover:bg-green-deep hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0"
+              className="group relative inline-flex items-center gap-2 overflow-hidden rounded-xl bg-green px-8 py-4 font-manrope text-lg font-bold text-paper transition-all hover:bg-green-deep hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0"
             >
               Become a Founding Sponsor
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="transition-transform group-hover:translate-x-1">
@@ -63,7 +63,7 @@ const Hero = () => {
             </a>
             <a
               href="#cities"
-              className="inline-flex items-center rounded-xl px-8 py-4 text-lg font-bold text-ink transition-all hover:bg-ink/5 ring-2 ring-line"
+              className="inline-flex items-center rounded-xl px-8 py-4 font-manrope text-lg font-bold text-ink transition-all hover:bg-ink/5 ring-2 ring-line"
             >
               Enquire
             </a>
@@ -72,7 +72,7 @@ const Hero = () => {
 
         {/* Visual Right */}
         <div className="relative lg:ml-auto lg:scale-[1.45] lg:-translate-x-16">
-          <div className="relative animate-float mx-auto max-w-[400px] lg:max-w-none">
+          <div className="relative animate-float mx-auto max-w-100 lg:max-w-none">
             {/* SVG Illustration */}
             <svg className="w-full h-auto drop-shadow-2xl rounded-3xl overflow-hidden" viewBox="0 0 1400 800" fill="none" xmlns="http://www.w3.org/2000/svg">
               <defs>
@@ -306,20 +306,20 @@ const Hero = () => {
 
             {/* Floating Stat Badges */}
             <div className="absolute -left-4 sm:-left-10 top-1/4 bg-paper p-2 sm:p-2.5 rounded-xl shadow-lg ring-1 ring-line animate-float" style={{ animationDelay: '1s' }}>
-              <div className="text-base sm:text-lg font-bold text-ink">10</div>
-              <div className="text-[8px] sm:text-[10px] font-semibold text-ink-soft uppercase tracking-wider">Cities</div>
+              <div className="font-fraunces text-base sm:text-lg font-bold text-ink">10</div>
+              <div className="font-mono text-[8px] sm:text-[10px] font-semibold text-ink-soft uppercase tracking-wider">Cities</div>
             </div>
             <div className="absolute right-0 sm:-right-2 -top-4 sm:-top-2 bg-paper p-2 sm:p-2.5 rounded-xl shadow-lg ring-1 ring-line animate-float" style={{ animationDelay: '2s' }}>
-              <div className="text-base sm:text-lg font-bold text-ink">3</div>
-              <div className="text-[8px] sm:text-[10px] font-semibold text-ink-soft uppercase tracking-wider">Months</div>
+              <div className="font-fraunces text-base sm:text-lg font-bold text-ink">3</div>
+              <div className="font-mono text-[8px] sm:text-[10px] font-semibold text-ink-soft uppercase tracking-wider">Months</div>
             </div>
             <div className="absolute -right-4 bottom-4 sm:bottom-1 bg-paper p-2 sm:p-2.5 rounded-xl shadow-lg ring-1 ring-line animate-float" style={{ animationDelay: '3.5s' }}>
-              <div className="text-base sm:text-lg font-bold text-ink">₹100<span className="text-xs">Cr</span></div>
-              <div className="text-[8px] sm:text-[10px] font-semibold text-ink-soft uppercase tracking-wider">Pipeline</div>
+              <div className="font-fraunces text-base sm:text-lg font-bold text-ink">₹100<span className="text-xs">Cr</span></div>
+              <div className="font-mono text-[8px] sm:text-[10px] font-semibold text-ink-soft uppercase tracking-wider">Pipeline</div>
             </div>
             <div className="absolute left-0 sm:left-1 -bottom-4 sm:-bottom-8 bg-paper p-2 sm:p-2.5 rounded-xl shadow-lg ring-1 ring-line animate-float" style={{ animationDelay: '0.5s' }}>
-              <div className="text-base sm:text-lg font-bold text-ink">50K<span className="text-green-bright">+</span></div>
-              <div className="text-[8px] sm:text-[10px] font-semibold text-ink-soft uppercase tracking-wider">Visitors</div>
+              <div className="font-fraunces text-base sm:text-lg font-bold text-ink">50K<span className="text-green-bright">+</span></div>
+              <div className="font-mono text-[8px] sm:text-[10px] font-semibold text-ink-soft uppercase tracking-wider">Visitors</div>
             </div>
           </div>
         </div>
@@ -328,20 +328,20 @@ const Hero = () => {
       {/* Stats Bar */}
       <div className="mt-24 grid grid-cols-2 gap-8 rounded-3xl bg-ink p-8 text-paper sm:grid-cols-4 lg:p-12">
         <div className="flex flex-col gap-2">
-          <div className="text-3xl font-bold sm:text-4xl">09</div>
-          <div className="text-sm font-medium text-paper/60">Tier 2/3 Cities</div>
+          <div className="font-fraunces text-3xl font-bold sm:text-4xl">09</div>
+          <div className="font-mono text-sm font-medium text-paper/60">Tier 2/3 Cities</div>
         </div>
         <div className="flex flex-col gap-2 border-l border-paper/10 pl-8">
-          <div className="text-3xl font-bold sm:text-4xl">50K<span className="text-green-bright">+</span></div>
-          <div className="text-sm font-medium text-paper/60">Expected Visitors</div>
+          <div className="font-fraunces text-3xl font-bold sm:text-4xl">50K<span className="text-green-bright">+</span></div>
+          <div className="font-mono text-sm font-medium text-paper/60">Expected Visitors</div>
         </div>
         <div className="flex flex-col gap-2 border-l-0 pl-0 sm:border-l sm:border-paper/10 sm:pl-8">
-          <div className="text-3xl font-bold sm:text-4xl">03</div>
-          <div className="text-sm font-medium text-paper/60">Months · 1 Closing Summit</div>
+          <div className="font-fraunces text-3xl font-bold sm:text-4xl">03</div>
+          <div className="font-mono text-sm font-medium text-paper/60">Months · 1 Closing Summit</div>
         </div>
         <div className="flex flex-col gap-2 border-l border-paper/10 pl-8">
-          <div className="text-3xl font-bold sm:text-4xl">20</div>
-          <div className="text-sm font-medium text-paper/60">Sponsor Slots Only</div>
+          <div className="font-fraunces text-3xl font-bold sm:text-4xl">20</div>
+          <div className="font-mono text-sm font-medium text-paper/60">Sponsor Slots Only</div>
         </div>
       </div>
     </header>

@@ -56,20 +56,20 @@ const tiers = [
 
 const SponsorshipSection = () => {
   return (
-    <section id="sponsors" className="relative z-10 mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
-      <div className="mb-16">
+    <section id="sponsors" className="relative z-10 mx-auto max-w-7xl px-6 py-12 sm:py-16 lg:px-8">
+      <div className="mb-12">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-6 inline-flex items-center rounded-full bg-paper px-4 py-1.5 text-sm font-semibold tracking-wide text-green shadow-sm ring-1 ring-inset ring-line"
+          className="mb-6 inline-flex items-center rounded-full bg-paper px-4 py-1.5 font-mono text-sm font-semibold tracking-wide text-green shadow-sm ring-1 ring-inset ring-line"
         >
           Sponsorship Tiers
         </motion.div>
-        <h2 className="text-3xl font-bold tracking-tight text-ink sm:text-4xl lg:text-4xl leading-[1.2] mb-6">
+        <h2 className="font-fraunces text-4xl font-normal text-ink sm:text-6xl lg:text-6xl leading-[1.0] mb-8" style={{ letterSpacing: '-0.04em' }}>
           Three tiers. <span className="text-green italic">Twenty seats.</span> One unforgettable journey.
         </h2>
-        <p className="text-sm font-medium text-ink-soft sm:text-lg">
+        <p className="font-manrope text-sm font-medium text-ink-soft sm:text-lg max-w-3xl">
           Every tier is built around one promise — your brand, in front of the right buyer, in every city we visit.
         </p>
       </div>
@@ -93,14 +93,14 @@ const SponsorshipSection = () => {
               }`}
             >
               {/* Massive background number */}
-              <div className={`absolute right-4 top-4 select-none font-black text-8xl lg:text-9xl opacity-10 ${
+              <div className={`absolute right-4 top-4 select-none font-fraunces font-black text-8xl lg:text-9xl opacity-10 ${
                 tier.featured ? "text-paper" : "text-paper/20"
               }`}>
                 0{tier.id}
               </div>
 
               <div className="relative z-10 flex flex-1 flex-col">
-                <div className={`mb-2 text-[10px] font-black uppercase tracking-[0.3em] ${
+                <div className={`mb-2 font-mono text-[10px] font-black uppercase tracking-[0.3em] ${
                   tier.featured ? "text-paper/60" : "text-paper/40"
                 }`}>
                   {tier.meta}
@@ -108,7 +108,7 @@ const SponsorshipSection = () => {
                 <h3 className="mb-2 text-4xl font-bold tracking-tighter sm:text-5xl">
                   {tier.name}
                 </h3>
-                <div className={`mb-12 text-xs font-bold ${
+                <div className={`mb-12 font-mono text-xs font-bold ${
                   tier.featured ? "text-ink" : "text-green"
                 }`}>
                   {tier.slots}
@@ -116,7 +116,7 @@ const SponsorshipSection = () => {
 
                 <ul className="mb-12 flex-1 space-y-5">
                   {tier.features.map((feature, fIdx) => (
-                    <li key={fIdx} className="flex items-start gap-3 text-sm font-medium leading-tight">
+                    <li key={fIdx} className="flex items-start gap-3 font-manrope text-sm font-medium leading-tight">
                       <svg 
                         width="18" height="18" viewBox="0 0 24 24" fill="none" 
                         stroke="currentColor" strokeWidth="3" 
@@ -131,7 +131,7 @@ const SponsorshipSection = () => {
 
                 <a
                   href="#contact"
-                  className={`inline-flex items-center justify-center rounded-2xl px-8 py-5 text-sm font-black uppercase tracking-widest transition-all ${
+                  className={`inline-flex items-center justify-center rounded-2xl px-8 py-5 font-manrope text-sm font-black uppercase tracking-widest transition-all ${
                     tier.featured 
                     ? "bg-ink text-paper hover:bg-white hover:text-ink hover:shadow-2xl" 
                     : "bg-paper text-ink hover:bg-green hover:text-paper"

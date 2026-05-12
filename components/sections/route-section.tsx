@@ -4,15 +4,15 @@ import React from "react";
 
 const RouteSection = () => {
   return (
-    <section id="cities" className="relative z-10 mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
-      <div className="mb-16">
-        <div className="mb-6 inline-flex items-center rounded-full bg-paper px-4 py-1.5 text-sm font-semibold tracking-wide text-green shadow-sm ring-1 ring-inset ring-line">
+    <section id="cities" className="relative z-10 mx-auto max-w-7xl px-6 py-12 sm:py-16 lg:px-8">
+      <div className="mb-12">
+        <div className="mb-6 inline-flex items-center rounded-full bg-paper px-4 py-1.5 font-mono text-sm font-semibold tracking-wide text-green shadow-sm ring-1 ring-inset ring-line">
           The Route · 2026
         </div>
-        <h2 className="text-3xl font-bold tracking-tight text-ink sm:text-4xl lg:text-4xl leading-[1.2] mb-6">
+        <h2 className="font-fraunces text-4xl font-normal text-ink sm:text-6xl lg:text-6xl leading-[1.0] mb-8" style={{ letterSpacing: '-0.04em' }}>
           From Palwal to Chandigarh — <span className="text-green italic">a 1,200 km journey</span> through India's most underserved clean-energy market.
         </h2>
-        <p className="text-sm font-medium text-ink-soft sm:text-lg">
+        <p className="font-manrope text-sm font-medium text-ink-soft sm:text-lg max-w-3xl">
           Each city stop is a 3-day ground activation: branded stalls, live demos, government enrolment desks, institutional B2B meets, and Haryanvi-language outreach. The journey ends with a flagship summit in Chandigarh.
         </p>
       </div>
@@ -118,7 +118,7 @@ const RouteSection = () => {
                 {/* Static Marker Circle */}
                 <circle cx="0" cy="0" r="28" fill="white" stroke={city.color} strokeWidth="2.5" />
                 <circle cx="0" cy="0" r="22" fill={city.color} />
-                <text x="0" y="7" font-size="18" fill="white" font-weight="bold" text-anchor="middle">{city.id}</text>
+                <text x="0" y="7" font-size="18" fill="white" font-weight="bold" text-anchor="middle" style={{ fontFamily: "var(--font-mono)" }}>{city.id}</text>
 
                 {/* Animated Info Card */}
                 <g opacity="0">
@@ -131,8 +131,8 @@ const RouteSection = () => {
                   />
                   <g transform="translate(40 -40)">
                     <rect width={city.width} height="80" rx="18" fill="white" stroke="url(#card-border-grad)" strokeWidth="1" />
-                    <text x="20" y="34" font-size="24" font-weight="bold" fill={city.color}>{city.name}</text>
-                    <text x="20" y="60" font-size="14" font-weight="medium" fill="var(--color-ink-soft)" opacity="0.6">{city.date}</text>
+                    <text x="20" y="34" font-size="24" font-weight="bold" fill={city.color} style={{ fontFamily: "var(--font-fraunces)" }}>{city.name}</text>
+                    <text x="20" y="60" font-size="14" font-weight="medium" fill="var(--color-ink-soft)" opacity="0.6" style={{ fontFamily: "var(--font-mono)" }}>{city.date}</text>
                   </g>
                 </g>
               </g>
@@ -143,7 +143,7 @@ const RouteSection = () => {
           <g transform="translate(1400 500)">
             <circle cx="0" cy="0" r="32" fill="white" stroke="#2cc985" strokeWidth="3" />
             <circle cx="0" cy="0" r="26" fill="#2cc985" />
-            <text x="0" y="8" font-size="22" fill="white" font-weight="bold" text-anchor="middle">★</text>
+            <text x="0" y="8" font-size="22" fill="white" font-weight="bold" text-anchor="middle" style={{ fontFamily: "var(--font-fraunces)" }}>★</text>
 
             {/* Animated Info Card */}
             <g opacity="0">
@@ -156,8 +156,8 @@ const RouteSection = () => {
               />
               <g transform="translate(45 -45)">
                 <rect width="280" height="90" rx="20" fill="white" stroke="url(#card-border-grad)" strokeWidth="2" />
-                <text x="20" y="38" font-size="24" font-weight="bold" fill="#2cc985">Chandigarh</text>
-                <text x="20" y="64" font-size="14" font-weight="medium" fill="var(--color-ink-soft)" opacity="0.6">Grand Finale Summit</text>
+                <text x="20" y="38" font-size="24" font-weight="bold" fill="#2cc985" style={{ fontFamily: "var(--font-fraunces)" }}>Chandigarh</text>
+                <text x="20" y="64" font-size="14" font-weight="medium" fill="var(--color-ink-soft)" opacity="0.6" style={{ fontFamily: "var(--font-mono)" }}>Grand Finale Summit</text>
               </g>
             </g>
           </g>

@@ -62,20 +62,20 @@ const segments = [
 
 const AudienceSection = () => {
   return (
-    <section id="audience" className="relative z-10 mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
-      <div className="mb-16">
+    <section id="audience" className="relative z-10 mx-auto max-w-7xl px-6 py-12 sm:py-16 lg:px-8">
+      <div className="mb-12">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-6 inline-flex items-center rounded-full bg-paper px-4 py-1.5 text-sm font-semibold tracking-wide text-blue shadow-sm ring-1 ring-inset ring-line"
+          className="mb-6 inline-flex items-center rounded-full bg-paper px-4 py-1.5 font-mono text-sm font-semibold tracking-wide text-blue shadow-sm ring-1 ring-inset ring-line"
         >
           Who Walks In
         </motion.div>
-        <h2 className="text-3xl font-bold tracking-tight text-ink sm:text-4xl lg:text-4xl leading-[1.2] mb-6">
+        <h2 className="font-fraunces text-4xl font-normal text-ink sm:text-6xl lg:text-6xl leading-[1.0] mb-8" style={{ letterSpacing: '-0.04em' }}>
           Institutional buyers <span className="text-blue italic">with budgets,</span> not browsers.
         </h2>
-        <p className="text-sm font-medium text-ink-soft sm:text-lg">
+        <p className="font-manrope text-sm font-medium text-ink-soft sm:text-lg max-w-3xl">
           We've designed HGER to attract decision-makers from four high-impact institutional segments — every one of them sitting on procurement budgets and ESG mandates this fiscal year.
         </p>
       </div>
@@ -111,7 +111,7 @@ const AudienceSection = () => {
               {segment.title}
             </h3>
             
-            <p className="text-sm font-medium leading-relaxed text-ink-soft">
+            <p className="font-manrope text-sm font-medium leading-relaxed text-ink-soft">
               {segment.description}
             </p>
           </motion.div>

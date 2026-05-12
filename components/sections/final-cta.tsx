@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const FinalCTA = () => {
   return (
-    <section id="contact" className="relative px-6 py-24 sm:py-32 lg:px-8">
+    <section id="contact" className="relative px-6 py-12 sm:py-16 lg:px-8">
       <motion.div 
         initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}
@@ -17,23 +17,23 @@ const FinalCTA = () => {
         <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 100% 100%, var(--color-green) 0%, transparent 40%)' }}></div>
         
         <div className="relative z-10 mx-auto max-w-3xl">
-          <div className="mb-8 inline-flex items-center rounded-full border border-paper/10 bg-paper/5 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-green-bright">
+          <div className="mb-8 inline-flex items-center rounded-full border border-paper/10 bg-paper/5 px-4 py-1.5 font-mono text-xs font-bold uppercase tracking-widest text-green-bright">
             Limited Partnership Slots
           </div>
           
-          <h2 className="mb-8 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl leading-[1.1]">
+          <h2 className="font-fraunces text-4xl font-normal text-paper sm:text-6xl lg:text-7xl leading-[1.0] mb-8" style={{ letterSpacing: '-0.04em' }}>
             The future is <span className="text-green-bright italic">cleaner.</span><br/>
             And it begins in Haryana.
           </h2>
           
-          <p className="mx-auto mb-10 max-w-xl text-base font-medium text-paper/60 sm:text-lg">
+          <p className="mx-auto mb-10 max-w-xl font-manrope text-base font-medium text-paper/60 sm:text-lg">
             HGER 2026 begins this March. With only 20 sponsor slots and a 3-month window, the conversation starts now.
           </p>
   
           <div className="flex flex-col items-center gap-8">
             <a
               href="mailto:partnerships@hger.in"
-              className="group relative inline-flex items-center gap-3 overflow-hidden rounded-xl bg-green px-8 py-4 text-lg font-bold text-paper transition-all hover:bg-green-bright hover:text-ink hover:shadow-[0_0_40px_rgba(44,201,133,0.4)] hover:-translate-y-1 active:translate-y-0"
+              className="group relative inline-flex items-center gap-3 overflow-hidden rounded-xl bg-green px-8 py-4 font-manrope text-lg font-bold text-paper transition-all hover:bg-green-bright hover:text-ink hover:shadow-[0_0_40px_rgba(44,201,133,0.4)] hover:-translate-y-1 active:translate-y-0"
             >
               Enquire for Partnership
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" className="transition-transform group-hover:translate-x-1">

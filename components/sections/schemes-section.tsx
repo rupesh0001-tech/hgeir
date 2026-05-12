@@ -121,34 +121,22 @@ const schemes = [
 
 const SchemesSection = () => {
   return (
-    <section id="schemes" className="relative z-10 mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
-      <div className="mb-16">
+    <section id="schemes" className="relative z-10 mx-auto max-w-7xl px-6 py-12 sm:py-16 lg:px-8">
+      <div className="mb-12">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-6 inline-flex items-center rounded-full bg-paper px-4 py-1.5 text-sm font-semibold tracking-wide text-green shadow-sm ring-1 ring-inset ring-line"
+          className="mb-6 inline-flex items-center rounded-full bg-paper px-4 py-1.5 font-mono text-sm font-semibold tracking-wide text-green shadow-sm ring-1 ring-inset ring-line"
         >
-          Government Schemes · Live Subsidies
+          Policies & Schemes
         </motion.div>
-        <motion.h2 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.1 }}
-          className="text-3xl font-bold tracking-tight text-ink sm:text-4xl lg:text-4xl leading-[1.2] mb-6"
-        >
-          Real money saved. <span className="text-green italic">Real schemes</span> we'll help visitors enrol in.
-        </motion.h2>
-        <motion.p 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.2 }}
-          className="text-sm font-medium text-ink-soft sm:text-lg"
-        >
-          HGER isn't just a brand event — we'll set up live government enrolment desks at every stop, helping visitors apply for subsidies on the spot. Your sponsor stall sits next to the people who'll actually buy.
-        </motion.p>
+        <h2 className="font-fraunces text-4xl font-normal text-ink sm:text-6xl lg:text-6xl leading-[1.0] mb-8" style={{ letterSpacing: '-0.04em' }}>
+          Government <span className="text-green italic">Backing.</span>
+        </h2>
+        <p className="font-manrope text-sm font-medium text-ink-soft sm:text-lg max-w-3xl">
+          We bring official enrolment desks for every major central and state scheme directly to the roadshow floor — helping visitors move from awareness to enrolment in minutes.
+        </p>
       </div>
 
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -160,7 +148,7 @@ const SchemesSection = () => {
             viewport={{ once: true }}
             transition={{ delay: idx * 0.1, duration: 0.5 }}
             whileHover={{ y: -8 }}
-            className={`group relative flex flex-col overflow-hidden rounded-[2rem] border p-8 transition-all ${
+            className={`group relative flex flex-col overflow-hidden rounded-4xl border p-8 transition-all ${
               scheme.featured 
               ? "bg-ink text-paper border-ink shadow-2xl scale-105 z-10" 
               : "bg-paper text-ink border-line hover:border-green/30 hover:shadow-xl"
@@ -173,7 +161,7 @@ const SchemesSection = () => {
             />
 
             <div className="relative z-10 flex flex-col h-full">
-              <div className={`mb-6 inline-block self-start rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-wider ${
+              <div className={`mb-6 inline-block self-start rounded-full px-3 py-1 font-mono text-[10px] font-bold uppercase tracking-wider ${
                 scheme.featured ? "bg-green text-paper" : "bg-bg text-ink-soft border border-line"
               }`}>
                 {scheme.type}
@@ -187,21 +175,21 @@ const SchemesSection = () => {
                 {scheme.title}
               </h3>
               
-              <p className={`mb-8 text-sm font-medium leading-relaxed ${scheme.featured ? "text-paper/70" : "text-ink-soft"}`}>
+              <p className={`mb-8 font-manrope text-sm font-medium leading-relaxed ${scheme.featured ? "text-paper/70" : "text-ink-soft"}`}>
                 {scheme.tagline}
               </p>
 
               <div className="mt-auto space-y-4">
                 <div className={`flex items-center justify-between border-b pb-3 ${scheme.featured ? "border-paper/10" : "border-line-soft"}`}>
-                  <span className={`text-[11px] font-bold uppercase tracking-wider ${scheme.featured ? "text-paper/40" : "text-ink-soft/60"}`}>Subsidy</span>
+                  <span className={`font-mono text-[11px] font-bold uppercase tracking-wider ${scheme.featured ? "text-paper/40" : "text-ink-soft/60"}`}>Subsidy</span>
                   <span className={`font-bold ${scheme.featured ? "text-green-bright" : "text-green"}`}>{scheme.subsidy}</span>
                 </div>
                 <div className={`flex items-center justify-between border-b pb-3 ${scheme.featured ? "border-paper/10" : "border-line-soft"}`}>
-                  <span className={`text-[11px] font-bold uppercase tracking-wider ${scheme.featured ? "text-paper/40" : "text-ink-soft/60"}`}>Savings</span>
+                  <span className={`font-mono text-[11px] font-bold uppercase tracking-wider ${scheme.featured ? "text-paper/40" : "text-ink-soft/60"}`}>Savings</span>
                   <span className="font-bold">{scheme.savings}</span>
                 </div>
                 <div className="flex items-center justify-between pb-1">
-                  <span className={`text-[11px] font-bold uppercase tracking-wider ${scheme.featured ? "text-paper/40" : "text-ink-soft/60"}`}>Target</span>
+                  <span className={`font-mono text-[11px] font-bold uppercase tracking-wider ${scheme.featured ? "text-paper/40" : "text-ink-soft/60"}`}>Target</span>
                   <span className="text-xs font-semibold">{scheme.bestFor}</span>
                 </div>
 
@@ -217,7 +205,7 @@ const SchemesSection = () => {
                       style={{ backgroundColor: scheme.featured ? "var(--color-green-bright)" : scheme.color }}
                     />
                   </div>
-                  <p className={`mt-3 text-[10px] font-semibold italic ${scheme.featured ? "text-paper/50" : "text-ink-soft/60"}`}>
+                  <p className={`mt-3 font-mono text-[10px] font-semibold italic ${scheme.featured ? "text-paper/50" : "text-ink-soft/60"}`}>
                     {scheme.barText}
                   </p>
                 </div>
@@ -232,7 +220,7 @@ const SchemesSection = () => {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="group relative mt-24 flex flex-col items-center justify-between gap-8 rounded-full bg-gradient-to-r from-green/5 to-paper p-4 pl-12 pr-12 ring-1 ring-green/20 lg:flex-row lg:py-6"
+        className="group relative mt-24 flex flex-col items-center justify-between gap-8 rounded-full bg-linear-to-r from-green/5 to-paper p-4 pl-12 pr-12 ring-1 ring-green/20 lg:flex-row lg:py-6"
       >
         <div className="flex items-center gap-8">
           <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-green text-paper shadow-lg shadow-green/20">
@@ -241,21 +229,21 @@ const SchemesSection = () => {
             </svg>
           </div>
           <div>
-            <div className="text-[10px] font-black uppercase tracking-[0.2em] text-green/60">Estimated Yearly Savings</div>
-            <div className="text-4xl font-black tracking-tight text-ink">₹52,000</div>
+            <div className="font-mono text-[10px] font-black uppercase tracking-[0.2em] text-green/60">Estimated Yearly Savings</div>
+            <div className="font-fraunces text-4xl font-black tracking-tight text-ink">₹52,000</div>
           </div>
         </div>
 
         <div className="hidden h-10 w-px bg-green/10 lg:block" />
 
         <div className="flex-1 text-center lg:text-left">
-          <p className="text-sm font-bold leading-relaxed text-ink-soft sm:text-base">
+          <p className="font-manrope text-sm font-bold leading-relaxed text-ink-soft sm:text-base">
             <span className="text-ink">Average Haryana Household impact</span> by adopting <br className="hidden xl:block"/>
             the right mix of solar & EV subsidies available today.
           </p>
         </div>
 
-        <div className="rounded-full bg-green/10 px-6 py-3 text-[10px] font-black uppercase tracking-widest text-green">
+        <div className="rounded-full bg-green/10 px-6 py-3 font-mono text-[10px] font-black uppercase tracking-widest text-green">
           Live Enrolment Desks
         </div>
       </motion.div>

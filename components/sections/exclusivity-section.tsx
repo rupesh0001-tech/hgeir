@@ -10,21 +10,24 @@ const ExclusivitySection = () => {
   }));
 
   return (
-    <section id="exclusive" className="relative z-10 mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
+    <section id="exclusive" className="relative z-10 mx-auto max-w-7xl px-6 py-12 sm:py-16 lg:px-8">
       <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:items-center">
         <div>
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mb-6 inline-flex items-center rounded-full bg-paper px-4 py-1.5 text-sm font-semibold tracking-wide text-green shadow-sm ring-1 ring-inset ring-line"
+            className="mb-6 inline-flex items-center rounded-full bg-paper px-4 py-1.5 font-mono text-sm font-semibold tracking-wide text-green shadow-sm ring-1 ring-inset ring-line"
           >
-            Strict Limit · No Exceptions
+            Exclusivity Guaranteed
           </motion.div>
-          <h2 className="text-3xl font-bold tracking-tight text-ink sm:text-4xl lg:text-4xl leading-[1.2] mb-6">
-            Only <span className="text-green italic">20 companies</span> will share this stage.
+          <h2 className="font-fraunces text-4xl font-normal text-ink sm:text-6xl lg:text-6xl leading-[1.0] mb-8" style={{ letterSpacing: '-0.04em' }}>
+            A <span className="text-green italic">limited</span> circle of partners.
           </h2>
-          <div className="space-y-6 text-sm font-medium leading-relaxed text-ink-soft sm:text-lg">
+          <p className="font-manrope text-sm font-medium text-ink-soft sm:text-lg max-w-xl">
+            We are capping each sponsor category to ensure that every partner gets maximum visibility and zero competition within their niche. This isn't a crowded expo — it's an exclusive roadshow.
+          </p>
+          <div className="space-y-6 font-manrope text-sm font-medium leading-relaxed text-ink-soft sm:text-lg">
             <p>
               HGER is not a crowded expo with hundreds of competing booths. We intentionally cap participation at <span className="text-green font-bold">twenty companies</span> across all 10 cities.
             </p>
@@ -35,7 +38,7 @@ const ExclusivitySection = () => {
           <div className="mt-10">
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 rounded-xl bg-green px-8 py-4 text-lg font-bold text-paper transition-all hover:bg-green-deep hover:shadow-xl hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 rounded-xl bg-green px-8 py-4 font-manrope text-lg font-bold text-paper transition-all hover:bg-green-deep hover:shadow-xl hover:-translate-y-0.5"
             >
               Claim a Slot
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
@@ -57,10 +60,10 @@ const ExclusivitySection = () => {
           <div className="relative z-10">
             <div className="mb-8 flex items-center justify-between border-b border-paper/10 pb-6">
               <div>
-                <div className="text-[10px] font-black uppercase tracking-widest text-paper/40">Sponsor Slots · Live</div>
-                <div className="mt-1 text-2xl font-bold text-paper">14 of 20 open</div>
+                <div className="font-mono text-[10px] font-black uppercase tracking-widest text-paper/40">Sponsor Slots · Live</div>
+                <div className="mt-1 font-fraunces text-2xl font-bold text-paper">14 of 20 open</div>
               </div>
-              <div className="rounded-full bg-green/20 px-4 py-1 text-xs font-bold text-green-bright animate-pulse">
+              <div className="rounded-full bg-green/20 px-4 py-1 font-mono text-xs font-bold text-green-bright animate-pulse">
                 Live Status
               </div>
             </div>
@@ -69,7 +72,7 @@ const ExclusivitySection = () => {
               {slots.map((slot) => (
                 <div
                   key={slot.id}
-                  className={`flex aspect-square items-center justify-center rounded-xl text-sm font-black transition-all ${
+                  className={`flex aspect-square items-center justify-center rounded-xl font-fraunces text-sm font-black transition-all ${
                     slot.taken 
                     ? "bg-green/10 text-green-bright ring-1 ring-green/20" 
                     : "bg-paper/5 text-paper/30 ring-1 ring-paper/10 hover:bg-paper/10 hover:text-paper"
@@ -80,7 +83,7 @@ const ExclusivitySection = () => {
               ))}
             </div>
 
-            <div className="mt-8 flex items-center gap-6 text-[10px] font-bold uppercase tracking-widest text-paper/40">
+            <div className="mt-8 flex items-center gap-6 font-mono text-[10px] font-bold uppercase tracking-widest text-paper/40">
               <div className="flex items-center gap-2">
                 <div className="h-2 w-2 rounded-full bg-green-bright"></div>
                 In Conversation
